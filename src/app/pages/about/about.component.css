@@ -1,0 +1,18 @@
+mat-card-content {
+  font-size: large;
+  line-height: 1.6;
+}
+
+mat-card {
+  width: 75%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.align-center {
+  text-align: center;
+}
+
+mat-icon {
+  font-size: 50px;
+}

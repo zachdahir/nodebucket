@@ -1,0 +1,24 @@
+/**
+ * Title: Nodebucket
+ * Author: Zachary Dahir
+ * Date: 9-26-20
+ * Description: auth layout
+ */
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-auth-layout',
+  templateUrl: './auth-layout.component.html',
+  styleUrls: ['./auth-layout.component.css']
+})
+export class AuthLayoutComponent implements OnInit {
+
+  year: number = Date.now();
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

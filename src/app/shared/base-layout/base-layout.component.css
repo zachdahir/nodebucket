@@ -1,0 +1,52 @@
+.logo {
+  margin-left: 75px;
+  font-size: 24px;
+  font-weight: lighter;
+  padding-top: 2%;
+}
+
+.navbar-container {
+  padding: 5px;
+  position: relative;
+}
+
+.navbar-link {
+  font-size: 24px;
+  font-weight: lighter;
+  padding-top: 2%;
+}
+
+.navbar-link:hover {
+  background-color: #00675b;
+}
+
+.main-content {
+  padding-left: 30px;
+}
+
+.footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.footer-content {
+  font-size: 16px;
+  font-weight: lighter;
+  padding-left: 100px;
+  letter-spacing: 3px;
+}
+
+.bu-link {
+  text-decoration: none;
+}
+
+.bu-link:hover {
+  text-decoration: underline;
+}
+
+.logoImage {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
