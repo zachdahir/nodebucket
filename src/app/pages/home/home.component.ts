@@ -60,9 +60,9 @@ export class HomeComponent implements OnInit {
   }
 
   drop(event: CdkDragDrop<any[]>) {
-    //if reorder same container
+    //if reordering same container
     if (event.previousContainer === event.container) {
-      //move item
+      //move item to new index in same container
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
 
       console.log('Moved item within list')
@@ -90,6 +90,7 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  //open dialog window for task dialog
   openCreateTaskDialog(){
     const dialogRef = this.dialog.open(CreateTaskDialogComponent, {
       disableClose: true
@@ -110,6 +111,7 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  //delete task
   deleteTask(taskId: string) {
     if (taskId) {
       console.log('Item Deleted')

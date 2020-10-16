@@ -6,3 +6,8 @@
 .sign-in-container > mat-card-title, mat-card-subtitle {
   text-align: center;
 }
+
+.error-container {
+  width:25%;
+  margin: 15% auto;
+}

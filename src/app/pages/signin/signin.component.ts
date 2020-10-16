@@ -36,11 +36,11 @@ export class SigninComponent implements OnInit {
     this.http.get('/api/employees/' + empId).subscribe(res => {
       if (res) {
         this.cookieService.set('session_user', empId);//set id to session_user
-         this.router.navigate(['/']);
+         this.router.navigate(['/']); //navigate home
       } else {
-        this.router.navigate(['/session/sign']);
+        this.router.navigate(['/session/signin']);//navigate to signin
 
-        this.error = "The employee Id entered is invalid";
+        alert('Error: Employee ID entered is invalid!')
       }
     })
   }
