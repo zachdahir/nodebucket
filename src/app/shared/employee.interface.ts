@@ -11,4 +11,5 @@ export interface Employee {
   empId: string;
   todo: Item[];
   done: Item[];
+  firstName: string;
 }

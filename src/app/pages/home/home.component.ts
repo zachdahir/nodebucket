@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   todo: Item[];
   done: Item[];
   employee: Employee;
-
+  firstName: string;
   empId: string;
 
   constructor(private cookieService: CookieService, private taskService: TaskService, private dialog: MatDialog) {
@@ -49,6 +49,7 @@ export class HomeComponent implements OnInit {
     }, () => {
       this.todo = this.employee.todo;
       this.done = this.employee.done;
+      this.firstName = this.employee.firstName;
 
       console.log('--Complete Function--')
       console.log(this.todo);

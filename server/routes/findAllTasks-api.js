@@ -14,7 +14,7 @@ const router = express.Router();
 
 router.get('/:empId/tasks', async(req, res) => {
     try {
-      Employee.findOne({'empId': req.params.empId}, 'empId todo done', function (err, employee){
+      Employee.findOne({'empId': req.params.empId}, 'empId firstName todo done', function (err, employee){
         if (err) {
             console.log(err);
             const mongoDbErrorResponse = new ErrorResponse('500', 'Internal Server Error', err)
